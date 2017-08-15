@@ -1,0 +1,113 @@
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+      position: absolute;
+      left: 30%;
+      top: 25%;
+      width:50%;
+      height: 50%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100vw;
+         height: 100vh;
+        background-color: black;
+      }
+
+      .tiendas-Menu{
+        position: absolute;
+        left: 3%;
+        top: 25%;
+        float: left;
+        width:40%;
+        height: 25%;
+      }
+
+      .tienda-titulo{
+        position: relative;
+        top: 100px;
+        left: 153px;
+        color: white;
+      }
+
+      .tiendas-dir{
+        color:white;
+        position: relative;
+        margin-left: 30%;
+        margin-top: 6%;
+      }
+
+      /**/
+    fieldset {
+  border: 0;
+  background-color: transparent;
+    }
+    label {
+      display: block;
+      margin: 10px 0 0 0;
+    }
+    .overflow {
+      height: 200px;
+    }
+
+/* Estilos agregados para el menu de seleccion*/
+
+/*boton de seleccion*/
+.ui-selectmenu-button.ui-button {
+    text-align: left;
+    white-space: nowrap;
+    width: 14em;
+    background-color: black !important;
+    color: white !important;
+    font-size: 20px;
+    border-radius: 0px;
+    border-width: 3px !important;
+    -webkit-transition: background 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: background 0.5s;
+}
+
+.ui-selectmenu-button.ui-button:hover {
+    text-align: left;
+    white-space: nowrap;
+    width: 14em;
+    background-color: white !important;
+    color: black !important;
+    font-size: 20px;
+    border-radius: 0px;
+    border-width: 3px !important;
+}
+
+.ui-button:focus {
+    border: 1px solid white;
+    background: white;
+    font-weight: normal;
+}
+
+/* estilos del menu desplegable ul */
+
+.ui-widget.ui-widget-content {
+    border: 3px solid white;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    padding: 25px 0px;
+}
+
+/* estilos de cada una de las opciones de la lista*/
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* subrayado de las opciones */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 0px solid #003eff;
+    background: white;
+    font-weight: normal;
+    color: black;
+}

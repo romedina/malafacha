@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  </head>
+
+  <body>
+    <h3 class="tienda-titulo">DE VENTA EN:</h3>
+    <div class="tiendas-Menu">
+      <form action="#">
+        <fieldset>
+          <label for="seleccion"></label>
+          <select name="seleccion" id="seleccion">
+            <option value="1" class="mapsOpciones">COMMON PEOPLE </option>
+            <option value="2">COMPRA MODA NACIONAL</option>
+            <option value="3">FASHION LOVERS </option>
+          </select>
+      </form>
+    </div>
+    <div>
+      <p class="tiendas-dir"> hola</p>
+    </div>
+    <div id="map"></div>
+
+     
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzX8Xp-V-3cQPTS6i-xpPHNh3zi5MaCII&callback=initMap"
+    async defer></script>
+  </body>
+</html>

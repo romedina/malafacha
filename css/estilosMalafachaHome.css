@@ -1,0 +1,461 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+}
+
+/*
+	Loader
+*/
+
+.loader-container{
+	width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #aaaaaa;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/*
+	Full Width Navigator
+*/
+
+.btnMenu{
+	position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.0) !important;
+    margin: 20px;
+    border: none !important;
+    z-index: 2;
+}
+.btnMenu span{
+	background-color: rgba(0,0,0,0.0) !important;
+	color: white !important;
+	border: none;
+	font-size: 35px;
+}
+
+.btnMenu_close{
+	position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.0) !important;
+    margin: 10px !important;
+    font-size: 15px !important;
+    border: none !important;
+    color: white !important;
+    z-index: 2;
+}
+
+.btnMenu_close-texto{
+	display: inline;
+    font-weight: 100;
+}
+
+.menuBtn_svg {
+    background-color: transparent;
+    width: 230px;
+    position: fixed;
+    margin: 15px;
+    z-index: 1;
+}
+.menuBtn_svg svg{
+    background-color: transparent;
+}
+
+.menuPrincipal{
+	width: 100vw;
+	height: 100vh;
+	overflow: scroll;
+	background-color: black;
+	font-weight: 100;
+	position: fixed;
+	margin: 0 0;
+	z-index: 3;
+}
+
+.menuPrincipal ul{
+	text-align: center;
+}
+
+.menuPrincipal ul li{
+	padding: 20px;
+}
+
+.menuPrincipal ul li a{
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+}
+
+.menuPrincipal_legales{
+	font-size: 15px;
+	text-align: center;
+	color: white;
+	font-weight: 100;
+	padding: 30px 0;
+}
+
+.menuPrincipal_legales_texto{
+	text-align: center;
+	color: white;
+	font-weight: 100;
+}
+
+.menuPrincipal_logo{
+	width: 100vw;
+    height: 20vh;
+    background-image: url(../imgs/malafacha_logo_blanco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 300px;
+}
+
+.menuPrincipal_opciones{
+	padding: 5vh 0px;
+}
+
+/*
+	Estilos del Home
+*/
+.sliderHome{
+	width: 100vw;
+    height: 100vh;
+	background-image: url(../imgs/malafacha_home_slider_02.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	background-color: black;
+}
+
+/*
+Comente este estilo, porque quiero poner un svg
+pero solo quiero quitar los background,
+lo demas si sirve...
+.sliderLogo{
+	width: 100vw;
+    margin-top: -100vh;
+    height: 100vh;
+    background-image: url(../imgs/malafacha_logo_blanco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.0);
+}
+*/
+
+.sliderLogo{
+  width: 100vw;
+  margin-top: -100vh;
+  height: 100vh;
+  background-color: transparent;
+  padding: 30vh 40px;
+}
+
+.sliderLogo svg{
+  background-color: transparent;
+}
+
+.sliderBtn{
+	margin-top: 80vh;
+  background-color: rgba(0,0,0,0.3) !important;
+  color: white !important;
+  padding: 10px 50px !important;
+  border-radius: 30px !important;
+  font-size: 15px !important;
+  font-weight: 100 !important;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.0);
+  -webkit-transition: background-color 0.5s, border-width 0.5s, box-shadow 0.5s; /* Safari 3.1 to 6.0 */
+  transition: background-color 0.5s, border-width 0.5s, box-shadow 0.5s;
+}
+
+.sliderBtn:hover{
+  background-color: rgba(0,0,0,0.8) !important;
+  border-width: 3px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Estilos seccion textoBienvenida con
+  Canvas interactivo
+*/
+
+.txtBienvenida{
+	color: white;
+  font-size: 20px;
+  padding: 0px !important;
+}
+
+.txtBienvenida_canvas{
+  position: absolute;
+  z-index: 1;
+}
+
+.txtBienvenida_texto{
+  position: absolute;
+  z-index: 2;
+  margin-top: -80vh;
+  background-color: transparent;
+  margin-bottom: 0px;
+  width: 100vw;
+  font-weight: 100;
+  text-shadow: 2px 1px 2px  #000;
+}
+
+.txtBienvenida_mapa{
+  width: 250px;
+}
+
+/*
+	Estilos del Footer
+*/
+
+.footer_padding{
+	padding:0 20px;
+}
+
+.footer_titulos{
+	font-weight: 100;
+	font-size: 11px;
+	color: white;
+}
+
+.footer_opcionesMenu{
+	font-size: 11px;
+	font-weight: 400;
+	list-style: none;
+	color: white;
+}
+
+.footer_opcionesMenu li a{
+	color: white;
+}
+
+.footer_legales{
+	font-weight: 100;
+	font-size: 13px;
+	color: white;
+}
+
+
+
+/*
+  Estilos que no tiene Diego
+*/
+
+#contenedor_1{
+  background-image: url(../imgs/1_home.jpg);
+  padding-top: 70vh;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  -webkit-transition: filter 0.5s, padding-top 0.5s; /* Safari 3.1 to 6.0 */
+    transition: filter 0.5s, padding-top 0.5s;
+}
+
+#contenedor_2{
+  background-image: url(../imgs/2_home.jpg);
+  padding-top: 70vh;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  -webkit-transition: filter 0.5s, padding-top 0.5s; /* Safari 3.1 to 6.0 */
+    transition: filter 0.5s, padding-top 0.5s;
+}
+#contenedor_3{
+  background-image: url(../imgs/3_home.jpg);
+  padding-top: 70vh;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  -webkit-transition: filter 0.5s, padding-top 0.5s; /* Safari 3.1 to 6.0 */
+    transition: filter 0.5s, padding-top 0.5s;
+}
+#contenedor_4{
+  background-image: url(../imgs/4_home.jpg);
+  padding-top: 70vh;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  -webkit-transition: filter 0.5s, padding-top 0.5s; /* Safari 3.1 to 6.0 */
+    transition: filter 0.5s, padding-top 0.5s;
+}
+#contenedor_5{
+  background-image: url(../imgs/5_home.jpg);
+  padding-top: 70vh;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  -webkit-transition: filter 0.5s, padding-top 0.5s; /* Safari 3.1 to 6.0 */
+    transition: filter 0.5s, padding-top 0.5s;
+}
+#contenedor_6{
+  background-image: url(../imgs/6_home.jpg);
+  padding-top: 70vh;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  -webkit-transition: filter 0.5s, padding-top 0.5s; /* Safari 3.1 to 6.0 */
+    transition: filter 0.5s, padding-top 0.5s;
+}
+
+/* Hover de los contendores */
+
+#contenedor_1:hover{
+  background-image: url(../imgs/1_home.jpg);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  padding-top: 60vh;
+}
+
+#contenedor_2:hover{
+  background-image: url(../imgs/2_home.jpg);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    padding-top: 60vh;
+}
+#contenedor_3:hover{
+  background-image: url(../imgs/3_home.jpg);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    padding-top: 60vh;
+}
+#contenedor_4:hover{
+  background-image: url(../imgs/4_home.jpg);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    padding-top: 60vh;
+}
+#contenedor_5:hover{
+  background-image: url(../imgs/5_home.jpg);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    padding-top: 60vh;
+}
+#contenedor_6:hover{
+  background-image: url(../imgs/6_home.jpg);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    padding-top: 60vh;
+}
+
+.galeria_contenedores{
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+.galeria_contenedores_textos{
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.galeria_contenedores_subtitulo{
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.googleMaps_cristal{
+  width: 100vw;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.googleMaps_mapa{
+  border: 0;
+  width: 90vw;
+  height: 70vh;
+}
+
+.footer{
+  color:white;
+}
+
+/*Estilos agregados Diego*/
+
+.logoIntro{
+  float: auto;
+  width: 300px;
+  height: 20px;
+  margin: auto;
+  padding: 0;
+}
+
+input{
+  height: 40px;
+  padding: 5px 5px 12px 5px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 320px;
+}
+
+label{
+  position:relative;
+  top:5px;
+  width:200px;
+  float: left;
+
+}
+.contactanos{
+  width:550px;
+  height: 100vh;
+  padding-top: 12vh;
+  color:white;
+  margin: 0 auto;
+  border-width: 3px;
+}
+.elemento-formulario
+{
+  margin-bottom: 10px;
+}
+#botonEnviar{
+  width: 200px;
+}
+#mensajeErrorCampos{
+  color: red;
+  font-size: 100% ;
+}
+.formulario-titulo{
+  font-size: 21px;
+  font-weight: 100;
+}
+
+#mensaje{
+  padding-bottom: 25%;
+  padding-top: 3%;
+}
+
+#botonEnviar:hover{
+  color:black;
+  background-color: white;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas Interactivo</title>
+	<!-- P5JS CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+	<style>
+		body{
+			background-color: red;
+		}
+		.sliderBtn_svg{
+			width: 300px;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<div class="sliderBtn_svg" onmouseover="activarMenu()" >
+		<svg version="1.1" id="lineDrawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 800 205.5" enable-background="new 0 0 800 205.5" xml:space="preserve">
+		
+		 	<path fill="#fff" d="M361.7,64.1c-3.4,0-6.1,2.7-6.1,6.1c0,3.4,2.7,6.1,6.1,6.1c3.4,0,6.1-2.7,6.1-6.1C367.8,66.8,365.1,64.1,361.7,64.1
+						L361.7,64.1z"/>
+			<g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+					
+				<polyline fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="10" points="215,17.4 162,17.4 162,133.4 230,133.4 
+				230,23.9 306,126.2 306,17.4 "/>
+				<line fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="10" x1="195" y1="60.4" x2="165" y2="60.4"/>
+				<line fill="none" stroke="#fff" stroke-width="3" stroke-miterlimit="10" x1="268.5" y1="27.4" x2="268.5" y2="172.4"/>
+				<path fill="none" stroke="#fff" stroke-width="6.1468" stroke-miterlimit="10" d="M342.8,18.7c-20.5,8.5-33.9,29.9-33.9,55
+					c0,32.6,23.6,58.9,52.9,58.9c29.2,0,52.8-26.4,52.8-58.9c0-25-14.4-46.4-33.9-55"/>			
+			</g>
+
+			<polygon fill="#fff"points="84.2,120.4 47.3,15.8 5.1,136.7 11.7,136.7 47.2,32.8 84.2,136.7 121.2,32.8 156.7,136.7 163.3,136.7 121.2,15.8 
+					"/>
+		</svg>
+	</div>
+	
+
+
+	<script src="../js/anime.min.js"></script>
+	<script src="../js/interaccionPruebas.js"></script>
+</body>
+</html>
